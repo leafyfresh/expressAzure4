@@ -1,0 +1,1 @@
+﻿console.log("console message.js loaded");

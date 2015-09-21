@@ -32,11 +32,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\javascripts\clientSocketListen.js" />
+    <Compile Include="public\javascripts\consoleMessage.js" />
+    <Compile Include="public\javascripts\mongooseConnectTest.js" />
+    <Compile Include="routes\chat.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
     <None Include="expressProject.pubxml" />
+    <Content Include="client.html" />
     <Content Include="package.json" />
+    <Content Include="public\client.html" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
