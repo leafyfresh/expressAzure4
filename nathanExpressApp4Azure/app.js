@@ -26,8 +26,19 @@ io.on('connection', function (socket) {
     });
     socket.on('chat message', function (msg) {
         io.emit('chat message', msg);
+        myUserList.addUser(msg);
     });
 });
+
+//mongoDb Stuff
+var mongoose = require('mongoose');
+var uriUtil = require('mongodb-uri');
+var mongodbUri = 'mongodb://leafyLab:t_buJMzmNnh8dqq8.WGpDtuZ.jOoDHZZ7n06s4gttCk-@ds040948.mongolab.com:40948/leafyLab';
+//Website portal: https://mongolab.com/databases/leafyLab/
+var mongooseUri = uriUtil.formatMongoose(mongodbUri);
+
+var UserList = require('./UserList.js');
+var myUserList = new UserList(mongooseUri);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

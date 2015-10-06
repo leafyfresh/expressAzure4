@@ -43,3 +43,6 @@
     #messages li:nth-child(odd) {
         background: #eee;
     }
+    .float-l{
+        float:left;
+    }

@@ -7,8 +7,11 @@ block stylesheets
     link(rel='stylesheet', href='/stylesheets/chatStyle.css')
 
 block content
-  ul#messages
+    p.float-l login:
+    input#username.float-l(autocomplete="off")
+    br
+    ul#messages
 
-  form
-    input#m(autocomplete="off")
-    button Send
+    form
+        input#m(autocomplete="off")
+        button Send
