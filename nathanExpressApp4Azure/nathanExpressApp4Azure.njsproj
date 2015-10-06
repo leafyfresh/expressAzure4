@@ -44,6 +44,8 @@
     <Content Include="package.json" />
     <Content Include="public\client.html" />
     <Content Include="public\favicon.ico" />
+    <Content Include="public\stylesheets\chatStyle.css" />
+    <Content Include="public\stylesheets\style.css" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
     <Content Include="views\index.jade" />
